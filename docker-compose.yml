@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  registry:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.registry
+    ports:
+      - "8001:8000"
+    environment:
+      - DATABASE_URL=postgresql://acuterium:${DB_PASSWORD}@db:5432/marketplace
+      - BARANURION_API=http://baranurion:8000
+      - Q_ENC_ENABLED=true
+    depends_on:
+      - db
+
+  discovery:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.discovery
+    ports:
+      - "8002:8000"
+    environment:
+      - DATABASE_URL=postgresql://acuterium:${DB_PASSWORD}@db:5432/marketplace
+      - FAISS_INDEX_PATH=/data/faiss_index
+      - COGNIMESH_ENDPOINT=http://cognimesh:9000
+    depends_on:
+      - db
+
+  infusion:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.infusion
+    ports:
+      - "8003:8000"
+    environment:
+      - DATABASE_URL=postgresql://acuterium:${DB_PASSWORD}@db:5432/marketplace
+      - BARANURION_API=http://baranurion:8000
+      - ACUTECT_CODEX_API=http://acutect:8000
+      - ASIP_ENABLED=true
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_DB=marketplace
+      - POSTGRES_USER=acuterium
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - marketplace_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+
+volumes:
+  marketplace_data:
