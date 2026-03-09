@@ -11,7 +11,7 @@
 
 The **Acuterium Agent Skills Marketplace** is the centralized platform for registering, distributing, discovering, and infusing agent skills across the entire Acuterium ecosystem. Every skill — from neural shard orchestration to sovereign governance — flows through this marketplace.
 
-**Registry Status:** `v5.0.0` — **3,972 agent skills** across 19 shards, 20 threads, and 4 domains.
+**Registry Status:** `v7.0.0` — **4,122 agent skills** across 19 shards, 20 threads, and 4 domains.
 
 Skills are **ASIP-infused** (Soul Infusion Protocol) units of specialized intelligence that can be deployed to any compatible agent within the ecosystem, governed by BARANURION and orchestrated by Diaran-MOE-Heavy.
 
@@ -62,14 +62,16 @@ Skills are **ASIP-infused** (Soul Infusion Protocol) units of specialized intell
 | 8 | **Commercial Products** | `33f596f5` | Product management |
 | 9 | **AcuTect DevOps Deployment** | `5c4bf71a` | CI/CD & infrastructure |
 
-### Registry Stats (v5.0.0)
+### Registry Stats (v7.0.0)
 
 | Metric | Count |
 |---|---|
-| **Total Skills** | 3,972 |
+| **Total Skills** | 4,122 |
 | **v3.0.0** (21 GitHub repos) | 2,188 |
 | **v4.0.0** (MCP Market, dmgrok, awesome-agent-skills, cookbooks) | +1,740 |
 | **v5.0.0** (Legal AI + MCP Market) | +44 |
+| **v6.0.0** (Frameworks + 8 ACU Proprietary + APASF + keyword/status enrichment) | +113 |
+| **v7.0.0** (21 MCP Market + 16 Legal/QA/Audit/Compliance) | +37 |
 | **Shard Coverage** | 19/19 |
 | **Thread Coverage** | T00–T20 |
 | **Domain Coverage** | cognitive, security, infrastructure, commercial |
