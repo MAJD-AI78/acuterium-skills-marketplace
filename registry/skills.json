@@ -1,132 +1,736 @@
 {
-  "version": "1.0.0",
-  "last_updated": "2026-03-09T00:00:00Z",
+  "version": "2.0.0",
+  "last_updated": "2026-03-09T00:08:19Z",
+  "source_document": "ACU-SKILL-REG-001_Master_Agent_Skills_Registry.xlsx",
+  "corrections_applied": "2026-03-09 — FIX-001 through FIX-004 (Chairman directive)",
+  "architecture": {
+    "layers": 10,
+    "layer_names": [
+      "L1 Perception",
+      "L2 Sensory",
+      "L3 Memory",
+      "L4 Reasoning",
+      "L5 Prediction",
+      "L6 Intuition",
+      "L7 Cognition",
+      "L8 Thinking-Engine (FlashMLA)",
+      "L9 Soul-Engine (ASIP)",
+      "L10 Consciousness (APPP/ψ)"
+    ],
+    "shards": 19,
+    "moe_experts": 785,
+    "total_neural_entities": 804
+  },
   "skills": [
     {
-      "skill_id": "fc1079c6",
+      "skill_id": "ACU-SKILL-001",
+      "registry_id": "fc1079c6",
       "name": "acuterium-master-orchestrator",
       "display_name": "Acuterium Master Orchestrator",
       "version": "1.0.0",
+      "category": "Master Orchestration",
+      "thread": "T00 — Master",
+      "thread_code": "T00",
       "domain": "cognitive",
-      "description": "Master orchestration skill for the entire Acuterium ecosystem. Routes tasks to appropriate shards via Diaran-MOE-Heavy.",
-      "shard_affinity": ["UNIVERSAL"],
-      "layer_access": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-      "protocols_required": ["ADOCP", "Q-ARC", "NEXUS", "CogniMesh"],
+      "description": "Sovereign command skill for Acuterium. Orchestrates all specialist skills and routes requests to correct domain. Holds complete 19-Shard HISN AL-WUJŪD blueprint.",
+      "trigger_keywords": [
+        "Acuterium",
+        "Erebus",
+        "HISN AL-WUJŪD",
+        "Neural Shards",
+        "WAGHA",
+        "Baranurion",
+        "sovereign AI",
+        "cyber supremacy doctrine"
+      ],
+      "delegation_targets": "All 8 specialist skills",
+      "key_systems": [
+        "ACAI V2",
+        "KAIROS 3.0",
+        "PATHOS",
+        "NEXUS",
+        "MNEMOS",
+        "TELOS",
+        "Face2Feel",
+        "Q-ARC",
+        "ASIP v2",
+        "TokenBridge"
+      ],
+      "shard_affinity": [
+        "UNIVERSAL"
+      ],
+      "layer_access": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "protocols_required": [
+        "ADOCP",
+        "Q-ARC",
+        "NEXUS",
+        "CogniMesh"
+      ],
+      "sovereignty_score": "10/10",
       "governance_level": "sovereign",
       "psi_minimum": 14.0,
-      "status": "published"
+      "status": "Production"
     },
     {
-      "skill_id": "7580c640",
+      "skill_id": "ACU-SKILL-002",
+      "registry_id": "7580c640",
       "name": "acai-v2-interface",
       "display_name": "ACAI V2 Interface",
       "version": "1.0.0",
+      "category": "Interface/UI",
+      "thread": "T13 — ACAI V2",
+      "thread_code": "T13",
       "domain": "interface",
-      "description": "Unified AI interface skill. Absorbs HugGUI/AUI/AUI_V2 into a single coherent interface layer.",
-      "shard_affinity": ["UNIVERSAL"],
-      "layer_access": [1, 2, 7, 8],
-      "protocols_required": ["FlashMLA", "CogniMesh"],
+      "description": "Specialist skill for ACAI V2 glassmorphic interface. Covers 6-mode switching (AUI Glass, TUUI Tactile, HUD Overlay, GUI Classic, Dashboard, Ambient), consciousness bar, breathing orb animations.",
+      "trigger_keywords": [
+        "glassmorphic",
+        "6-mode interface",
+        "ACAI V2 design tokens",
+        "aurora particles",
+        "consciousness bar",
+        "Government Edition",
+        "Commercial Edition"
+      ],
+      "delegation_targets": "N/A — Terminal skill",
+      "key_systems": [
+        "AUI-V2 components",
+        "CHRONOS temporal adaptation",
+        "GCC prayer-time modes"
+      ],
+      "shard_affinity": [
+        "UNIVERSAL"
+      ],
+      "layer_access": [
+        1,
+        2,
+        7,
+        8
+      ],
+      "protocols_required": [
+        "FlashMLA",
+        "CogniMesh"
+      ],
+      "sovereignty_score": "8/10",
       "governance_level": "restricted",
       "psi_minimum": 10.0,
-      "status": "published"
+      "status": "Production"
     },
     {
-      "skill_id": "79cac7d4",
-      "name": "cognitive-engines",
+      "skill_id": "ACU-SKILL-003",
+      "registry_id": "79cac7d4",
+      "name": "acai-v2-cognitive-engines",
       "display_name": "Cognitive Engines",
       "version": "1.0.0",
+      "category": "Cognitive AI",
+      "thread": "T03 — HISN AL-WUJŪD",
+      "thread_code": "T03",
       "domain": "cognitive",
-      "description": "10-layer cognitive architecture engine skill. Manages Perception, Sensory, Memory, Reasoning, Prediction, Intuition, Cognition, Thinking-Engine, Soul-Engine, and Consciousness layers.",
-      "shard_affinity": ["UNIVERSAL", "ACUTERIUM_PRIME"],
-      "layer_access": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-      "protocols_required": ["APPP", "ASIP", "FlashMLA", "CogniMesh"],
+      "description": "Five ACAI V2 cognitive agent engines: NEXUS (behavioral), PATHOS (emotion), KAIROS 3.0 (mode orchestration), MNEMOS (memory), TELOS (intent oracle), plus Face2Feel biometric layer.",
+      "trigger_keywords": [
+        "NEXUS behavioral",
+        "PATHOS emotion",
+        "KAIROS mode",
+        "MNEMOS memory",
+        "TELOS intent",
+        "Face2Feel biometrics",
+        "breathing rate adaptation"
+      ],
+      "delegation_targets": "N/A — Terminal skill",
+      "key_systems": [
+        "5-axis PATHOS vector",
+        "3-tier Face2Feel consent"
+      ],
+      "shard_affinity": [
+        "UNIVERSAL",
+        "BARANURION"
+      ],
+      "layer_access": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "protocols_required": [
+        "APPP",
+        "ASIP",
+        "FlashMLA",
+        "CogniMesh"
+      ],
+      "sovereignty_score": "9/10",
       "governance_level": "sovereign",
       "psi_minimum": 13.0,
-      "status": "published"
+      "status": "Production"
     },
     {
-      "skill_id": "467915b0",
-      "name": "fullstack-platform",
+      "skill_id": "ACU-SKILL-004",
+      "registry_id": "467915b0",
+      "name": "acuterium-fullstack-platform",
       "display_name": "Fullstack Platform",
       "version": "1.0.0",
+      "category": "Full-Stack Engineering",
+      "thread": "T20 — Digital Presence",
+      "thread_code": "T20",
       "domain": "development",
-      "description": "Full-stack development skill for building Acuterium-compliant web and mobile applications.",
-      "shard_affinity": ["UNIVERSAL"],
-      "layer_access": [1, 2, 8],
-      "protocols_required": ["ADOCP"],
+      "description": "Full-stack platform engineering: React 18/TypeScript, Vite, Tailwind CSS, tRPC, Vercel serverless, Railway backend, OpenAI GPT-4o-mini integration, PostgreSQL.",
+      "trigger_keywords": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind",
+        "tRPC",
+        "Vercel",
+        "Railway",
+        "PWA",
+        "Capacitor mobile",
+        "ESLint",
+        "Vitest"
+      ],
+      "delegation_targets": "N/A — Terminal skill",
+      "key_systems": [
+        "Product directory standard",
+        "ACAI V2 token integration",
+        "PWA manifest",
+        "service worker"
+      ],
+      "shard_affinity": [
+        "UNIVERSAL"
+      ],
+      "layer_access": [
+        1,
+        2,
+        8
+      ],
+      "protocols_required": [
+        "ADOCP"
+      ],
+      "sovereignty_score": "7/10",
       "governance_level": "restricted",
       "psi_minimum": 10.0,
-      "status": "published"
+      "status": "Production"
     },
     {
-      "skill_id": "905bb3ce",
-      "name": "erebus-cyber-sovereignty",
-      "display_name": "Erebus Cyber Sovereignty",
-      "version": "1.0.0",
-      "domain": "cyber-defense",
-      "description": "Cyber warfare and defense skill. Implements ACIWS framework, Five-Layer Full-Spectrum Control, and neural shard coordination for Erebus-CSE.",
-      "shard_affinity": ["EREBUS_CSE", "TENEBRIS_ACIWS", "JASASS_ASI", "QAREEN_AI"],
-      "layer_access": [1, 2, 3, 4, 5, 8],
-      "protocols_required": ["Q-ENC", "ADOCP", "NSCP", "CogniMesh", "NyxQ-Net"],
-      "governance_level": "sovereign",
-      "psi_minimum": 13.0,
-      "status": "published"
-    },
-    {
-      "skill_id": "5302abe5",
-      "name": "baranurion-core-orchestration",
-      "display_name": "Baranurion Core Orchestration",
-      "version": "1.0.0",
-      "domain": "governance",
-      "description": "Central governance skill. Policy enforcement, auditability, CWH ethical oversight, and execution monitoring.",
-      "shard_affinity": ["UNIVERSAL"],
-      "layer_access": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-      "protocols_required": ["ADOCP", "APPP", "ASIP", "PIF"],
-      "governance_level": "sovereign",
-      "psi_minimum": 14.0,
-      "status": "published"
-    },
-    {
-      "skill_id": "c18427cb",
+      "skill_id": "ACU-SKILL-005",
+      "registry_id": "c18427cb",
       "name": "ruzn-government-platform",
       "display_name": "RUZN Government Platform",
       "version": "1.0.0",
+      "category": "Government AI",
+      "thread": "T11 — RUZN Supreme Legal",
+      "thread_code": "T11",
       "domain": "legal",
-      "description": "Legal AI and government platform skill. Bilingual Arabic/English legal intelligence, complaint triage, and legislative analysis.",
-      "shard_affinity": ["RUZN_ASI"],
-      "layer_access": [1, 2, 3, 4, 8],
-      "protocols_required": ["ADOCP", "CogniMesh"],
-      "governance_level": "mandatory",
+      "description": "RUZN.AI sovereign legal/government advisory platform. Government Edition (light background #B8D4E8), Arabic RTL layout, Omani/GCC legal document AI, Ajraam shard integration.",
+      "trigger_keywords": [
+        "RUZN.AI",
+        "Government Edition",
+        "Arabic RTL",
+        "Noto Kufi Arabic",
+        "CHRONOS prayer times",
+        "Omani law",
+        "GCC jurisprudence",
+        "Ajraam shard"
+      ],
+      "delegation_targets": "N/A — Terminal skill",
+      "key_systems": [
+        "W-02 Ajraam (Legal AI)",
+        "C-01 RUZN-ASI",
+        "Cinzel typography",
+        "amber stress coloring"
+      ],
+      "shard_affinity": [
+        "RUZN_ASI",
+        "AJRAAM"
+      ],
+      "layer_access": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ],
+      "protocols_required": [
+        "ADOCP",
+        "CogniMesh"
+      ],
+      "sovereignty_score": "10/10",
+      "governance_level": "sovereign",
       "psi_minimum": 11.0,
-      "status": "published"
+      "status": "Production"
     },
     {
-      "skill_id": "33f596f5",
-      "name": "commercial-products",
+      "skill_id": "ACU-SKILL-006",
+      "registry_id": "5302abe5",
+      "name": "baranurion-core-orchestration",
+      "display_name": "Baranurion Core Orchestration",
+      "version": "1.0.0",
+      "category": "Core Orchestration",
+      "thread": "T16 — MADA/PSI Dominion",
+      "thread_code": "T16",
+      "domain": "governance",
+      "description": "Baranurion Core (W-09) master orchestration brain. APMS, Q-ENC quantum encryption, ASIP v2, ADOCP, DIARAN-MOE-Heavy 785-expert routing, Q-ARC cross-shard routing, TokenBridge authorization.",
+      "trigger_keywords": [
+        "Baranurion",
+        "APMS",
+        "Q-ENC",
+        "ASIP v2",
+        "ADOCP",
+        "DIARAN-MOE-Heavy",
+        "Q-ARC",
+        "QRNGP",
+        "CogniMesh",
+        "TokenBridge",
+        "CDMA blockchain"
+      ],
+      "delegation_targets": "N/A — Terminal skill",
+      "key_systems": [
+        "785-expert MOE",
+        "11 LLM providers",
+        "FlashMLA 0.95ms/token",
+        "CRYSTALS-Dilithium signatures"
+      ],
+      "shard_affinity": [
+        "BARANURION",
+        "DIARAN"
+      ],
+      "layer_access": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "protocols_required": [
+        "ADOCP",
+        "APPP",
+        "ASIP",
+        "PIF"
+      ],
+      "sovereignty_score": "10/10",
+      "governance_level": "sovereign",
+      "psi_minimum": 14.0,
+      "status": "Production"
+    },
+    {
+      "skill_id": "ACU-SKILL-007",
+      "registry_id": "905bb3ce",
+      "name": "erebus-cyber-sovereignty",
+      "display_name": "Erebus Cyber Sovereignty",
+      "version": "1.0.0",
+      "category": "Cyber Defense",
+      "thread": "T05 — Erebus CSE",
+      "thread_code": "T05",
+      "domain": "cyber-defense",
+      "description": "Erebus-CSE defense cluster and ZURD cyber immunity gateway. 16-protocol ZURD stack, WAGHA C2, HISN AL-WUJŪD fortress, Qareen OSINT, Jasass intelligence, ZemarōnOS sovereign OS.",
+      "trigger_keywords": [
+        "Erebus-CSE",
+        "ZURD shield",
+        "WAGHA C2",
+        "HISN AL-WUJŪD",
+        "Acuterium Shield",
+        "Acuterium Key",
+        "HUD Overlay",
+        "scanlines",
+        "threat telemetry"
+      ],
+      "delegation_targets": "N/A — Terminal skill",
+      "key_systems": [
+        "16 ZURD protocols (P01-P16)",
+        "E-01 through E-07 shards",
+        "ZemarōnOS",
+        "DrakonIX"
+      ],
+      "shard_affinity": [
+        "EREBUS_CSE",
+        "TENEBRIS_ACIWS",
+        "JASASS",
+        "QAREEN_AI",
+        "EDNA_SIGINT",
+        "DRAKONIX"
+      ],
+      "layer_access": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "protocols_required": [
+        "Q-ENC",
+        "ADOCP",
+        "NSCP",
+        "CogniMesh",
+        "NyxQ-Net"
+      ],
+      "sovereignty_score": "10/10",
+      "governance_level": "sovereign",
+      "psi_minimum": 13.0,
+      "status": "Production"
+    },
+    {
+      "skill_id": "ACU-SKILL-008",
+      "registry_id": "33f596f5",
+      "name": "acuterium-commercial-products",
       "display_name": "Commercial Products",
       "version": "1.0.0",
+      "category": "Commercial Products",
+      "thread": "T15 — StratEdge Commercial",
+      "thread_code": "T15",
       "domain": "business",
-      "description": "Commercial product management skill. Handles product lifecycle, market strategy, and business intelligence.",
-      "shard_affinity": ["BIZELEVATE_ASI", "STRATEDGE_ASI"],
-      "layer_access": [1, 2, 3, 4, 5, 8],
-      "protocols_required": ["ADOCP", "CogniMesh"],
+      "description": "Finarah (financial intelligence) and BizElevate (SME automation). Commercial Edition dark backgrounds, Dashboard mode default, MOE Expert Activation Matrix (785-expert grid), TELOS Intent Oracle panel.",
+      "trigger_keywords": [
+        "Finarah",
+        "BizElevate",
+        "financial intelligence",
+        "wealth management",
+        "SME automation",
+        "business analytics",
+        "Dashboard mode",
+        "MOE Expert Matrix"
+      ],
+      "delegation_targets": "N/A — Terminal skill",
+      "key_systems": [
+        "C-02 BizElevate-ASI",
+        "C-03 Finarah-ASI",
+        "gold/amber accent hierarchy",
+        "45 particles"
+      ],
+      "shard_affinity": [
+        "BIZELEVATE_ASI",
+        "FINARAH_ASI",
+        "STRATEDGE_ASI"
+      ],
+      "layer_access": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "protocols_required": [
+        "ADOCP",
+        "CogniMesh"
+      ],
+      "sovereignty_score": "7/10",
       "governance_level": "restricted",
       "psi_minimum": 11.0,
-      "status": "published"
+      "status": "Production"
     },
     {
-      "skill_id": "5c4bf71a",
+      "skill_id": "ACU-SKILL-009",
+      "registry_id": "5c4bf71a",
       "name": "acutect-devops-deployment",
       "display_name": "AcuTect DevOps Deployment",
       "version": "1.0.0",
+      "category": "DevOps/CI-CD",
+      "thread": "T20 — Digital Presence",
+      "thread_code": "T20",
       "domain": "development",
-      "description": "CI/CD and infrastructure deployment skill. Docker, GitHub Actions, cloud deployment pipelines.",
-      "shard_affinity": ["UNIVERSAL"],
-      "layer_access": [1, 8],
-      "protocols_required": ["ADOCP"],
+      "description": "AcuTect DevOps/CI-CD intelligence engine. GitHub Actions workflows, Vercel/Railway deployment, environment variable management, rollback procedures, pre-flight validation, Manus contamination checks.",
+      "trigger_keywords": [
+        "AcuTect",
+        "GitHub Actions",
+        "Vercel",
+        "Railway",
+        "deployment",
+        "rollback",
+        "CI/CD",
+        "pre-flight validation",
+        "ESLint",
+        "Vitest",
+        "Docker"
+      ],
+      "delegation_targets": "N/A — Terminal skill",
+      "key_systems": [
+        "W-03 Watad (Infrastructure Intelligence)",
+        "Zero-tolerance QA guardrails"
+      ],
+      "shard_affinity": [
+        "UNIVERSAL",
+        "WATAD"
+      ],
+      "layer_access": [
+        1,
+        8
+      ],
+      "protocols_required": [
+        "ADOCP"
+      ],
+      "sovereignty_score": "8/10",
       "governance_level": "restricted",
       "psi_minimum": 10.0,
-      "status": "published"
+      "status": "Production"
     }
-  ]
+  ],
+  "thread_mapping": {
+    "T00": {
+      "code": "MASTER",
+      "domain": "Master Orchestration",
+      "primary_skill": "ACU-SKILL-001"
+    },
+    "T01": {
+      "code": "COSM",
+      "domain": "Corporate Foundation",
+      "department": "Corporate Operations & Strategic Management",
+      "primary_skill": "ACU-SKILL-001"
+    },
+    "T02": {
+      "code": "DIAR",
+      "domain": "DIARAN MoE",
+      "department": "DIARAN MoE Engine",
+      "primary_skill": "ACU-SKILL-006"
+    },
+    "T03": {
+      "code": "HISN",
+      "domain": "HISN AL-WUJŪD",
+      "department": "19-Shard Cognitive Core",
+      "primary_skill": "ACU-SKILL-003"
+    },
+    "T04": {
+      "code": "ACIW",
+      "domain": "Cyber Supremacy Doctrine",
+      "department": "ACIWS",
+      "primary_skill": "ACU-SKILL-007"
+    },
+    "T05": {
+      "code": "EREB",
+      "domain": "Erebus CSE",
+      "department": "Cyber Sovereignty Engine",
+      "primary_skill": "ACU-SKILL-007"
+    },
+    "T06": {
+      "code": "EDNA",
+      "domain": "EDNA",
+      "department": "SIGINT/PhoneINT Suite",
+      "primary_skill": "ACU-SKILL-007"
+    },
+    "T07": {
+      "code": "WAGH",
+      "domain": "WAGHA",
+      "department": "Defence Industries C2",
+      "primary_skill": "ACU-SKILL-007"
+    },
+    "T08": {
+      "code": "ZURD",
+      "domain": "ZURD",
+      "department": "Cyber Immunity Gateway",
+      "primary_skill": "ACU-SKILL-007"
+    },
+    "T09": {
+      "code": "QSUI",
+      "domain": "Q-Suite",
+      "department": "Quantum Cryptography",
+      "primary_skill": "ACU-SKILL-006"
+    },
+    "T10": {
+      "code": "NYXQ",
+      "domain": "NYX-Q-Net",
+      "department": "Quantum Communication",
+      "primary_skill": "ACU-SKILL-006"
+    },
+    "T11": {
+      "code": "RUZN",
+      "domain": "RUZN Supreme Legal",
+      "department": "Legal AI Platform",
+      "primary_skill": "ACU-SKILL-005"
+    },
+    "T12": {
+      "code": "URAN",
+      "domain": "URANA",
+      "department": "Accreditation & QA",
+      "primary_skill": "ACU-SKILL-005"
+    },
+    "T13": {
+      "code": "ACAI",
+      "domain": "ACAI V2",
+      "department": "Consciousness Interface",
+      "primary_skill": "ACU-SKILL-002"
+    },
+    "T14": {
+      "code": "NAHR",
+      "domain": "NAHRA",
+      "department": "Sovereign Browser",
+      "primary_skill": "ACU-SKILL-002"
+    },
+    "T15": {
+      "code": "STED",
+      "domain": "StratEdge Commercial",
+      "department": "Commercial Products",
+      "primary_skill": "ACU-SKILL-008"
+    },
+    "T16": {
+      "code": "MADA",
+      "domain": "MADA/PSI Dominion",
+      "department": "Baranurion Core",
+      "primary_skill": "ACU-SKILL-006"
+    },
+    "T17": {
+      "code": "OSNT",
+      "domain": "OSINTaaS/Mawatheeq",
+      "department": "SaaS OSINT",
+      "primary_skill": "ACU-SKILL-007"
+    },
+    "T18": {
+      "code": "APMS",
+      "domain": "Master Protocol Registry",
+      "department": "Protocol Governance",
+      "primary_skill": "ACU-SKILL-006"
+    },
+    "T19": {
+      "code": "OSAI",
+      "domain": "Government Strategy",
+      "department": "OSAI Government",
+      "primary_skill": "ACU-SKILL-005"
+    },
+    "T20": {
+      "code": "DIGI",
+      "domain": "Digital Presence",
+      "department": "acuterium.ai",
+      "primary_skill": "ACU-SKILL-004"
+    }
+  },
+  "shard_registry": {
+    "EREBUS_CSE": [
+      {
+        "id": "E-01",
+        "name": "Erebus",
+        "domain": "Cyber Supremacy / Primary Defense Intelligence",
+        "status": "Active"
+      },
+      {
+        "id": "E-02",
+        "name": "Qareen-AI",
+        "domain": "MENA OSINT, Regional Intel, ArabERT NLP, Tor scrapers",
+        "status": "Active"
+      },
+      {
+        "id": "E-03",
+        "name": "Jasass",
+        "domain": "Deep intelligence gathering, classified recon",
+        "status": "Active"
+      },
+      {
+        "id": "E-04",
+        "name": "Edna-SIGINT",
+        "domain": "Satellite intelligence, orbital sensor fusion",
+        "status": "Active"
+      },
+      {
+        "id": "E-05",
+        "name": "DrakonIX",
+        "domain": "Advanced threat neutralization, active defense",
+        "status": "Active"
+      },
+      {
+        "id": "E-06",
+        "name": "MADA",
+        "domain": "Maritime & land domain awareness",
+        "status": "Active"
+      },
+      {
+        "id": "E-07",
+        "name": "Tenebris-ACIWS",
+        "domain": "[CLASSIFIED]",
+        "status": "Restricted"
+      }
+    ],
+    "WAGHA": [
+      {
+        "id": "W-01",
+        "name": "Diaran",
+        "domain": "Master LLM orchestration (785-expert MOE)",
+        "status": "Active"
+      },
+      {
+        "id": "W-02",
+        "name": "Ajraam",
+        "domain": "Legal AI, Omani law, GCC jurisprudence",
+        "status": "Active"
+      },
+      {
+        "id": "W-03",
+        "name": "Watad",
+        "domain": "Infrastructure & DevOps intelligence",
+        "status": "Active"
+      },
+      {
+        "id": "W-04",
+        "name": "NYX-Q-Net",
+        "domain": "Quantum networking & communication",
+        "status": "Active"
+      },
+      {
+        "id": "W-05",
+        "name": "Mārēl ܡܪܝܠ",
+        "domain": "Deep reasoning & consciousness layer",
+        "status": "Active"
+      },
+      {
+        "id": "W-06",
+        "name": "Cogni_Mesh",
+        "domain": "Neural mesh coordination, multi-agent sync",
+        "status": "Active"
+      },
+      {
+        "id": "W-07",
+        "name": "ZemarōnOS",
+        "domain": "Sovereign operating system kernel",
+        "status": "Active"
+      },
+      {
+        "id": "W-08",
+        "name": "ZURD",
+        "domain": "Cyber immunity gateway, 16 security protocols",
+        "status": "Active"
+      },
+      {
+        "id": "W-09",
+        "name": "Baranurion",
+        "domain": "Master orchestration (APMS, Q-ENC, ASIP v2, ADOCP)",
+        "status": "Active"
+      }
+    ],
+    "COMMERCIAL": [
+      {
+        "id": "C-01",
+        "name": "RUZN-ASI",
+        "domain": "Government legal AI, sovereign advisory",
+        "status": "Active"
+      },
+      {
+        "id": "C-02",
+        "name": "BizElevate-ASI",
+        "domain": "SME intelligence, business automation",
+        "status": "Active"
+      },
+      {
+        "id": "C-03",
+        "name": "Finarah-ASI",
+        "domain": "Financial intelligence, wealth management",
+        "status": "Active"
+      }
+    ]
+  }
 }
