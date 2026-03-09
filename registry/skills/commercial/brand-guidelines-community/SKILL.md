@@ -1,0 +1,38 @@
+---
+name: brand-guidelines-community
+display_name: Brand Guidelines Community
+skill_id: ACU-SKILL-0272
+version: 1.0.0
+category: design
+thread: T14
+domain: commercial
+shard_affinity:
+  - Commercial
+layer_access:
+  - L3
+  - L4
+  - L5
+sovereignty_score: 7
+governance_level: advisory
+source_repo: sickn33/antigravity-awesome-skills
+triggers:
+  - uncategorized
+---
+
+# Brand Guidelines Community
+
+## Description
+Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatt...
+
+## Acuterium Integration
+- **Thread:** T14 — NAHRA
+- **Shard:** Commercial
+- **Layers:** L3, L4, L5
+- **Governance:** advisory
+- **Sovereignty Score:** 7/10
+- **PSI Minimum:** 10.0
+
+## Source
+- **Repository:** sickn33/antigravity-awesome-skills
+- **File:** skills/brand-guidelines-community
+- **Author:** antigravity-community
