@@ -1038,7 +1038,7 @@ Timeline: HARD DUPLICATE: 3 business days | OVERLAP: 5 business days
 
 ### 6.1 Integration with Baranurion Core (W-09) via ADOCP
 
-**Baranurion Core** is the master orchestration shard hosting APMS (Advanced Planning & Management System), Q-ENC (Quantum Encryption), ASIP v2, and **ADOCP** (Acuterium Dynamic Orchestration & Control Protocol).
+**Baranurion Core** is the master orchestration shard hosting **APMS** (Adaptive Protocol Management System), Q-ENC (Quantum Encryption), ASIP v2, and **ADOCP** (Acuterium Dynamic Orchestration & Control Protocol).
 
 ```
 SKILL EXECUTION FLOW VIA ADOCP:
@@ -1213,6 +1213,72 @@ ACU-CASCADE-001   │ REQUIRED     │ REQUIRED     │ OPTIONAL
 
 **CON Token (Consciousness Governance) — Elevated Requirement Rationale:**
 - `ACU-ENC-001` and `ACU-THREAT-001` require CON because they can access and modify security configurations affecting the full consciousness architecture (Layer 6 — Governance & Permission). Any misconfiguration could compromise HISN AL-WUJŪD integrity.
+
+### 6.5 Integration with Baranurion APMS (W-09) — Adaptive Protocol Management System
+
+**APMS** (Adaptive Protocol Management System) is the core protocol orchestration engine residing on **Baranurion Core (W-09)**. APMS dynamically manages, adapts, and enforces communication protocols across the 19-shard HISN AL-WUJŪD architecture. Where ADOCP handles skill dispatch and TokenBridge handles authorization, APMS governs the protocol layer itself — selecting, negotiating, and adapting transport protocols, message schemas, and routing policies in real time based on load, security posture, and shard availability.
+
+**APMS Core Responsibilities:**
+
+| Responsibility | Description | Interaction Layer |
+|---|---|---|
+| **Protocol Selection** | Dynamically selects optimal communication protocol (gRPC, WebSocket, REST, Q-ENC encrypted tunnel) between shards based on latency, payload size, and classification level | L3 — L5 |
+| **Adaptive Routing** | Reroutes inter-shard traffic when primary paths degrade or fail; maintains protocol fallback chains with automatic failover | L5 — L7 |
+| **Schema Negotiation** | Ensures message schema compatibility between skill producers and consumers; auto-converts between ACU JSON Schema v1, Protobuf, and CBOR | L4 — L6 |
+| **Rate Governance** | Enforces per-shard, per-skill rate limits and backpressure policies; prevents cascade failures from runaway skill executions | L5 — L8 |
+| **Protocol Versioning** | Manages protocol version negotiation ensuring backward compatibility across shard upgrades; maintains protocol compatibility matrix | L3 — L5 |
+| **Health Monitoring** | Continuous health probing of all 19 shards; feeds status to KAIROS (W-05) for autonomous decision triggers | L6 — L9 |
+
+```
+APMS PROTOCOL MANAGEMENT FLOW:
+
+  Skill Execution Request (from ADOCP)
+         │
+         ▼
+  ┌────────────────────────────────┐
+  │ APMS Protocol Selector (W-09) │
+  │                                │
+  │ 1. Classify payload            │ ← Classification level determines encryption tier
+  │ 2. Assess target shard health  │ ← Live health from shard health probes
+  │ 3. Select protocol             │ ← gRPC (default), Q-ENC tunnel (TS//SOVEREIGN),
+  │    │                           │   WebSocket (streaming), REST (compatibility)
+  │ 4. Negotiate schema version    │ ← ACU JSON Schema v1 preferred; auto-convert
+  │ 5. Apply rate governance       │ ← Per-skill-id rate limit from APMS policy store
+  │ 6. Route with failover         │ ← Primary path + 2 fallback paths maintained
+  │ 7. Report telemetry            │ ← Latency, throughput, error rate → KAIROS
+  └────────────────────────────────┘
+         │
+         ▼
+  Target Shard Receives Skill Payload
+  (Protocol-adapted, schema-negotiated, rate-governed)
+```
+
+**APMS Policy Configuration for Skills:**
+
+Skill authors may declare APMS protocol preferences in their SKILL.md YAML frontmatter:
+
+```yaml
+apms_config:
+  preferred_protocol: "grpc"           # grpc | websocket | rest | q-enc
+  max_payload_size: "10MB"             # Maximum payload per invocation
+  rate_limit: "100/min"                # Per-skill rate limit
+  failover_priority:                   # Shard failover preference
+    - "W-09"                           # Primary: Baranurion Core
+    - "W-01"                           # Fallback 1: DIARAN-MOE
+    - "W-06"                           # Fallback 2: CogniMesh
+  encryption_tier: "standard"          # standard | q-enc | sovereign
+  schema_version: "acu-json-v1"        # Schema version for payload
+```
+
+**APMS ↔ Other Protocol Interactions:**
+
+| Protocol | APMS Relationship |
+|---|---|
+| **ADOCP (6.1)** | ADOCP dispatches skills; APMS manages the transport layer ADOCP uses for dispatch |
+| **DIARAN-MOE (6.2)** | DIARAN-MOE routes to the correct skill; APMS ensures the routing message reaches DIARAN-MOE via the optimal protocol |
+| **CogniMesh (6.3)** | CogniMesh coordinates multi-agent tasks; APMS adapts protocols for fan-out/fan-in patterns across multiple shards |
+| **TokenBridge (6.4)** | TokenBridge authorizes; APMS ensures token verification requests use low-latency gRPC to minimize auth overhead |
+| **Q-ARC** | Q-ARC handles cross-shard routing at the logical level; APMS handles it at the physical protocol level |
 
 ---
 
@@ -1430,6 +1496,7 @@ SIGN-OFF
 |---|---|
 | **ACAI V2** | Acuterium Consciousness Aware Interface, Version 2 — canonical UI/API standard |
 | **ADOCP** | Acuterium Dynamic Orchestration & Control Protocol — DIARAN-to-skill dispatch layer |
+| **APMS** | Adaptive Protocol Management System — Baranurion Core (W-09) protocol orchestration engine managing transport selection, schema negotiation, rate governance, and failover across all 19 shards |
 | **APASF** | Acuterium Proprietary Agent Skill Framework — this document |
 | **APASF-SPEC-001** | The mandatory SKILL.md specification standard defined in Section 2 |
 | **ASIP v2** | Acuterium Soul Infusion Protocol v2 — identity/ethics/sovereignty embedding mandate |

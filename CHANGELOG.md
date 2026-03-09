@@ -1,5 +1,37 @@
 # Changelog — acuterium-skills-marketplace
 
+## [7.0.0] — 2026-03-09
+
+### Added
+- **37 new agent skills** (21 MCP Market + 16 Acuterium Proprietary Legal/QA/Audit/Compliance)
+- MCP Market Skills (21): Comprehensive Research Agent, Deep Research Workflow, Perplexity Search Integration, ARK Research Intelligence, Hacker News Explorer, Advanced X/Twitter Intelligence, People Research & Discovery, Financial Report Advanced Search, Company Intelligence Research, Google Places Search, Firecrawl Web Scraper, USPTO Patent & Trademark Intelligence, Google Search Web Access, Agent Team Task Coordination, Multi-Agent Communication Protocols, Multi-Agent PR Reviewer, Swarm Intelligence Coordinator V3, Agentic Jujutsu Quantum-Resistant VCS, Z-AI Multimodal CLI, Reverse API Engineer, Perplexity AI Deep Search
+- Legal AI Skills (5): Contract Review Agent, Legal Research Assistant, Legal Document Drafting Agent, Due Diligence Agent, E-Discovery Processing Agent
+- Compliance AI Skills (5): Compliance Monitoring Agent, Regulatory Change Intelligence Agent, Policy Enforcement Agent, Risk Assessment Intelligence Agent, Compliance Workflow Automation Agent
+- Audit AI Skills (3): Internal Audit Automation Agent, Automated Compliance Auditing Agent, Audit Trail & Evidence Management Agent
+- Quality Assurance Skills (3): QA Quality Assurance Framework Agent, Accreditation & Attestation Intelligence Agent, CAPA Narrative Generator Agent
+- APASF Framework V1 updated: Added Section 6.5 — Baranurion APMS (Adaptive Protocol Management System) integration protocol; fixed APMS nomenclature
+- SKILL.md files for all 16 proprietary skills in skills/{legal-ai,compliance-ai,audit-ai,quality-assurance}/
+- MCP Market handover report (ACU-HANDOVER-MCP-001) and implementation instructions in docs/
+- IDs: ACU-SKILL-4086 through ACU-SKILL-4122
+
+### Changed
+- Skills registry total: 4,085 → 4,122
+- Registry version: 6.0.0 → 7.0.0
+- APASF Section 6 now covers 5 integration protocols: ADOCP, DIARAN-MOE, CogniMesh, TokenBridge, APMS
+
+## [6.0.0] — 2026-03-09
+
+### Added
+- **113 new agent skills** (105 framework + 8 Acuterium proprietary)
+- Framework skills: AutoGen Studio, OpenAI Agents SDK, Google ADK, LangGraph, CrewAI, Semantic Kernel, Haystack, Camel-AI, BabyAGI, SmolAgents, Dify
+- 8 proprietary skills: RIA, PRISM-SIE, Q-ENC, THREAT, StratEdge, PSI, RedTeam, Cascade
+- APASF Framework V1 (Acuterium Proprietary Agent Skill Framework)
+- Keyword enrichment for 2,249 skills, status promotion for 2,179 draft→published
+- SQL transaction wrappers with verification
+
+### Changed
+- Skills registry total: 3,972 → 4,085
+
 ## [5.0.0] — 2026-03-09
 
 ### Added
