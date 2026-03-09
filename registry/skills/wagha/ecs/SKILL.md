@@ -1,0 +1,38 @@
+---
+name: ecs
+display_name: Ecs
+skill_id: ACU-SKILL-2039
+version: 1.0.0
+category: cloud-aws
+thread: T13
+domain: infrastructure
+shard_affinity:
+  - Marel
+layer_access:
+  - L5
+  - L6
+  - L7
+sovereignty_score: 8
+governance_level: restricted
+source_repo: itsmostafa/aws-agent-skills
+triggers:
+
+---
+
+# Ecs
+
+## Description
+AWS ECS container orchestration for running Docker containers. Use when deploying containerized applications, configuring task definitions, setting up services, managing clusters, or troubleshooting container issues.
+
+## Acuterium Integration
+- **Thread:** T13 — ACAI V2
+- **Shard:** Marel
+- **Layers:** L5, L6, L7
+- **Governance:** restricted
+- **Sovereignty Score:** 8/10
+- **PSI Minimum:** 10.0
+
+## Source
+- **Repository:** itsmostafa/aws-agent-skills
+- **File:** skills/ecs/SKILL.md
+- **Author:** itsmostafa/aws-agent-skills

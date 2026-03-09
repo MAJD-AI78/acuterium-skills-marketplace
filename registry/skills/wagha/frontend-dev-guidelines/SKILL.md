@@ -1,0 +1,38 @@
+---
+name: frontend-dev-guidelines
+display_name: Frontend Dev Guidelines
+skill_id: ACU-SKILL-0563
+version: 1.0.0
+category: cloud-aws
+thread: T13
+domain: infrastructure
+shard_affinity:
+  - Marel
+layer_access:
+  - L5
+  - L6
+  - L7
+sovereignty_score: 8
+governance_level: restricted
+source_repo: sickn33/antigravity-awesome-skills
+triggers:
+  - uncategorized
+---
+
+# Frontend Dev Guidelines
+
+## Description
+Opinionated frontend development standards for modern React + TypeScript applications. Covers Suspense-first data fetching, lazy loading, feature-based architecture, MUI v7 styling, TanStack Router...
+
+## Acuterium Integration
+- **Thread:** T13 — ACAI V2
+- **Shard:** Marel
+- **Layers:** L5, L6, L7
+- **Governance:** restricted
+- **Sovereignty Score:** 8/10
+- **PSI Minimum:** 10.0
+
+## Source
+- **Repository:** sickn33/antigravity-awesome-skills
+- **File:** skills/frontend-dev-guidelines
+- **Author:** antigravity-community

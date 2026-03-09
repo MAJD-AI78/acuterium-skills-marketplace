@@ -1,0 +1,38 @@
+---
+name: azure-ai-voicelive-ts
+display_name: Azure Ai Voicelive Ts
+skill_id: ACU-SKILL-0151
+version: 1.0.0
+category: cloud-azure
+thread: T13
+domain: infrastructure
+shard_affinity:
+  - Marel
+layer_access:
+  - L5
+  - L6
+  - L7
+sovereignty_score: 8
+governance_level: restricted
+source_repo: sickn33/antigravity-awesome-skills
+triggers:
+  - uncategorized
+---
+
+# Azure Ai Voicelive Ts
+
+## Description
+Azure AI Voice Live SDK for JavaScript/TypeScript. Build real-time voice AI applications with bidirectional WebSocket communication.
+
+## Acuterium Integration
+- **Thread:** T13 — ACAI V2
+- **Shard:** Marel
+- **Layers:** L5, L6, L7
+- **Governance:** restricted
+- **Sovereignty Score:** 8/10
+- **PSI Minimum:** 10.0
+
+## Source
+- **Repository:** sickn33/antigravity-awesome-skills
+- **File:** skills/azure-ai-voicelive-ts
+- **Author:** antigravity-community
