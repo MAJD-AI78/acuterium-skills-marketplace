@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/llm-ranking-matrix.schema.json",
+  "title": "LLM Ranking Matrix Schema",
+  "type": "object",
+  "required": ["matrix"],
+  "properties": {
+    "matrix": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["llm", "sub_models", "consciousness", "capabilities", "performance", "scoring"],
+        "properties": {
+          "llm": { "type": "string" },
+          "vendor": { "type": "string" },
+          "version": { "type": "string" },
+          "description": { "type": "string" },
+
+          "sub_models": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["model", "api_key", "cost", "deepresearch", "predictive_uptime_score"],
+              "properties": {
+                "model": { "type": "string" },
+                "api_key": { "type": ["string", "null"] },
+                "integrations": { "type": "array", "items": { "type": "string" } },
+                "cost": {
+                  "type": "object",
+                  "properties": {
+                    "input": { "type": "number" },
+                    "output": { "type": "number" },
+                    "unit": { "type": "string", "default": "USD per 1K tokens" }
+                  },
+                  "required": ["input", "output"]
+                },
+                "deepresearch": {
+                  "type": "object",
+                  "properties": {
+                    "max_words": { "type": "integer" },
+                    "whitepaper_support": { "type": "string" },
+                    "quantum_support": { "type": "boolean", "default": false }
+                  },
+                  "required": ["max_words", "whitepaper_support"]
+                },
+                "data_analysis": { "type": "object", "additionalProperties": { "type": ["boolean", "string", "number"] } },
+                "multimodal": { "type": "object", "additionalProperties": { "type": "boolean" } },
+                "languages": { "type": "array", "items": { "type": "string" } },
+                "offline": { "type": "boolean" },
+                "open_source": { "type": "boolean" },
+                "self_hosted": { "type": "boolean" },
+                "predictive_uptime_score": { "type": "number" },
+                "fallback_llms": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          },
+
+          "consciousness": {
+            "type": "object",
+            "properties": {
+              "compatibility": { "type": "number" },
+              "reasoning_depth": { "type": "number" },
+              "ethical_alignment": { "type": "number" },
+              "intuition_score": { "type": "number" }
+            }
+          },
+
+          "capabilities": {
+            "type": "object",
+            "properties": {
+              "reasoning": { "type": "object", "properties": { "logical": { "type": "number" }, "strategic": { "type": "number" }, "planning": { "type": "number" } } },
+              "cognition": { "type": "object", "properties": { "contextual": { "type": "number" }, "memory": { "type": "number" }, "adaptation": { "type": "number" } } },
+              "multimodal": { "type": "array", "items": { "type": "string" } },
+              "speech": {
+                "type": "object",
+                "properties": {
+                  "input": { "type": "boolean" },
+                  "output": { "type": "boolean" },
+                  "stt": { "type": "boolean" },
+                  "tts": { "type": "boolean" },
+                  "supported_languages": { "type": "array", "items": { "type": "string" } }
+                }
+              },
+              "document_handling": {
+                "type": "object",
+                "properties": {
+                  "formats": { "type": "array", "items": { "type": "string" } },
+                  "max_length": { "type": "string" },
+                  "files_per_task": { "type": "integer" }
+                }
+              },
+              "code_generation": {
+                "type": "object",
+                "properties": {
+                  "languages": { "type": "array", "items": { "type": "string" } },
+                  "web_dev": { "type": "array", "items": { "type": "string" } },
+                  "autonomous_deployment": { "type": "boolean" }
+                }
+              },
+              "algorithms": { "type": "array", "items": { "type": "string" } },
+              "math_formulas": { "type": "boolean" },
+              "quantum_simulation": {
+                "type": "object",
+                "properties": {
+                  "supported": { "type": "boolean" },
+                  "methods": { "type": "array", "items": { "type": "string" } }
+                }
+              },
+              "orchestration": {
+                "type": "object",
+                "properties": {
+                  "leader_agent": { "type": "boolean" },
+                  "swarm_coordination": { "type": "boolean" },
+                  "max_agents": { "type": "integer" },
+                  "task_orchestration": { "type": "boolean" }
+                }
+              },
+              "autonomous": {
+                "type": "object",
+                "properties": {
+                  "fire_and_forget": { "type": "boolean" },
+                  "night_worker": { "type": "boolean" },
+                  "skill_file_support": { "type": "boolean" }
+                }
+              },
+              "deployment": {
+                "type": "object",
+                "properties": {
+                  "cloud": { "type": "boolean" },
+                  "on_premises": { "type": "boolean" },
+                  "edge": { "type": "boolean" },
+                  "web": { "type": "boolean" },
+                  "containerized": { "type": "boolean" }
+                }
+              },
+              "security": {
+                "type": "object",
+                "properties": {
+                  "encryption": { "type": "string" },
+                  "compliance": { "type": "array", "items": { "type": "string" } },
+                  "data_sovereignty": { "type": "string" }
+                }
+              }
+            }
+          },
+
+          "performance": {
+            "type": "object",
+            "properties": {
+              "latency": { "type": "string" },
+              "hallucination_rate": { "type": "number" },
+              "accuracy": { "type": "number" },
+              "throughput": { "type": "string" }
+            }
+          },
+
+          "features": { "type": "array", "items": { "type": "string" } },
+          "excel_sectors": { "type": "array", "items": { "type": "string" } },
+
+          "language_proficiency": {
+            "type": "object",
+            "properties": {
+              "primary_languages": { "type": "array", "items": { "type": "string" } },
+              "secondary_languages": { "type": "array", "items": { "type": "string" } },
+              "total_languages": { "type": "integer" },
+              "proficiency_score": { "type": "number" },
+              "dialect_mastery": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object",
+                  "properties": {
+                    "supported": { "type": "boolean" },
+                    "score": { "type": "number" }
+                  }
+                }
+              }
+            }
+          },
+
+          "research_capabilities": {
+            "type": "object",
+            "properties": {
+              "deep_research": { "type": "object", "properties": { "score": { "type": "number" }, "capabilities": { "type": "array", "items": { "type": "string" } } } },
+              "latex_generation": { "type": "object", "properties": { "score": { "type": "number" }, "capabilities": { "type": "array", "items": { "type": "string" } } } },
+              "whitepaper_generation": { "type": "object", "properties": { "score": { "type": "number" }, "capabilities": { "type": "array", "items": { "type": "string" } } } }
+            }
+          },
+
+          "scoring": {
+            "type": "object",
+            "properties": {
+              "reasoning": { "type": "number" },
+              "creativity": { "type": "number" },
+              "accuracy": { "type": "number" },
+              "speed": { "type": "number" },
+              "multimodal": { "type": "number" },
+              "coding": { "type": "number" },
+              "cognition": { "type": "number" },
+              "strategic_vision": { "type": "number" }
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}
