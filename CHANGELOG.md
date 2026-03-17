@@ -1,4 +1,39 @@
-# Changelog — acuterium-skills-marketplace
+# Changelog — Acuterium Skills Marketplace
+
+## [v8.0.0] — 2026-03-17 — Pan Framework + Commercial Products Release
+
+### Added — Pan Framework Skills (9 files)
+- `ACU-PAN-JUDGE-001.md` — LLM Judge: Output Quality Evaluation Engine
+- `ACU-PAN-MATRIX-001.md` — LLM Matrix Loader: Unified Ranking Matrix Engine
+- `ACU-PAN-ADOCP-001.md` — ADOCP: Dynamic Orchestration & Coordination Protocol
+- `ACU-PAN-COMPLIANCE-001.md` — Compliance Rules Engine: Prometheus-Style Monitoring
+- `ACU-PAN-CYBERDEF-001.md` — Erebus Cyber Defence: Sovereign Threat Intelligence
+- `ACU-PAN-NEGOTIATE-001.md` — Meta Negotiation: Multi-LLM Task Routing
+- `ACU-PAN-RECOVERY-001.md` — Task Recovery: Automatic Fallback Handler
+- `ACU-PAN-DAG-001.md` — DAG Engine: Directed Acyclic Graph Execution
+- `ACU-PAN-ORCHESTRATOR-001.md` — Pan Orchestrator (CrewAI, LangGraph, Events, Scheduler, Master Pipeline)
+
+### Added — Commercial Product Skills (2 files)
+- `ACU-MADA-001.md` — MADA Intelligence Briefing System (Flagship Commercial Tier 1)
+- `ACU-URANA-001.md` — URANA Quality Management System (Flagship Commercial Tier 1)
+
+### Updated
+- `INDEX.md` — v1.0 → v2.0: Registry expanded from 8 → 19 proprietary skills
+- Updated dependency map with MADA, URANA, and Pan Framework integration
+- Updated shard deployment map (complete 19-skill mapping)
+- Total Acuterium registry skills: 42 (Lawvable) + 19 (Proprietary) = 61
+
+### QA Status
+- All 19 files pass naming convention (`ACU-[MODULE]-[###].md`) ✅
+- All 19 files pass frontmatter validation (required fields present) ✅
+- All 19 files pass prohibited content check (zero Manus references) ✅
+- All files ASIP v2 compliant, TokenBridge authorized
+
+### Source Attribution
+- Pan Framework skills authored by Claude Opus 4.6 (Pan Orchestration Engine)
+- MADA/URANA skills authored by Acuterium Technologies Inc.
+- QA validation and repo integration by Perplexity Computer
+
 
 ## [7.0.0] — 2026-03-09
 
